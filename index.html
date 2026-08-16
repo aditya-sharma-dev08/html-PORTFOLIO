@@ -3,59 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <title>My Portfolio</title>
+    <style>
+      body {
+        background-color: aliceblue;
+        margin: 0px;
+      }
+      h1{font-family: 'Fira Code';
+    font-size: 28px;
+  font-weight: 700;}
+      h2{text-align: center;
+      font-family: 'JetBrains Mono';
+    font-size: 20px;
+  font-weight: 500;
+color: #4B5563;}
+      #name {
+        padding: 1.5px 0px 1.5px 10px;
+        background-color: white;
+      }
+      #contact {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px 20px;
+        font-size: 13px;
+      }
+      a {
+        color: black;
+      }
+      #absolute-contact {
+        padding: 0px 15px;
+      }
+      .projects{height: 100px;
+      width: 100px;
+    padding: 10px;
+  margin: 0px;}
+
+    #bday{position: relative;
+      left: 250px;
+    bottom: 120px;
+  
+}
+#profile{position: relative;
+  bottom: 240px;
+  left: 500px;
+}
+#vocab{position: relative;
+bottom: 360px;
+left: 750px;}
+#meme{position: relative;
+bottom: 480px;
+left: 1000px;}
+#footer{text-align: center;
+font-size: 10px;}
+#note{text-align: center;
+  width: 100%;
+background-color: #8FA28A;
+position: absolute;
+bottom: 0;}
+li h3{font-family: 'Inter', 'Roboto', sans-serif;
+font-size: 22px;
+font-weight: 600;}
+    </style>
   </head>
   <body>
-    <h1>Aditya Sharma</h1>
-    <hr />
-    <h2>An enthusiastic developer and aspiring SWE.</h2>
-    <h3>
-      <a href="./public/about.html">About Me </a
-      ><a href="./public/contact.html"> Contact Me </a>
+    <div id="name"><h1>Aditya Sharma</h1></div>
+    <h3 id="contact">
+      <a href="./public/contact.html" id="absolute-contact"> Contact Me </a
+      ><a href="./public/about.html"> About Me </a>
     </h3>
-    <hr />
-    <h3>Projects made by me so far....</h3>
-    <ol>
-      <li>
-        Movie Recommendation Project <br />
-        <a href="./public/movie-ranking.html"
-          ><img src="./assets/images/Movie Ranking Project.png" height="200"
-        /></a>
-        <p>
-          You can access the project by clicking on the image itself or by
-          clicking <a href="./public/movie-ranking.html">HERE</a>
-        </p>
-      </li>
-      <li>
-        BirthDay Invitation Project <br />
-        <a href="./public/birthday-invite.html"
-          ><img
-            src="./assets/images/Birthday Invitation Project.png"
-            height="200"
-        /></a>
-        <p>
-          You can access the project by clicking on the image itself or by
-          clicking <a href="./public/birthday-invite.html">HERE</a>
-        </p>
-      </li>
-      <li>Profile</li>
-      <br />
-      <a href="./public/Resume/index.html"
-        ><img src="./assets/images/My Profile.png" height="200"
-      /></a>
-      <p>
-        You can access the project by clicking on the image itself or by
-        clicking
-        <a href="./public/Resume/index.html">HERE</a>
-      </p>
-      <li>Color Vocab Website</li>
-      <br />
-      <a href="./public/Colour Vocab Website/index.html"
-        ><img src="./assets/images/Color Vocab.png" height="200"
-      /></a>
-      <p>
-        You can access the project by clicking on the image itself or by
-        clicking <a href="./public/Colour Vocab Website/index.html">HERE</a>
-      </p>
-    </ol>
+    <h2>Aspiring Web Dev & SWE</h2>
+    <div id="heading"><ul>
+      <li><h3 style="padding: 0px 10px">Projects -</h3></li></ul>
+    </div>
+    <div id="projects">
+      <ol>
+        <div class="projects"><li>
+          Movie Recommendation Project <br />
+          <a href="./public/movie-ranking.html"
+            ><img src="./assets/images/Movie Ranking Project.png" height="200" width="200"
+          /></a></div>
+        </li>
+        <div id="bday" class="projects"><li>
+          BirthDay Invitation Project <br />
+          <a href="./public/birthday-invite.html"
+            ><img
+              src="./assets/images/Birthday Invitation Project.png"
+              height="200" width="200"
+          /></a></div>
+        </li><div id="profile" class="projects"><li>Profile</li>
+        <br />
+        <a href="./public/Resume/index.html"
+          ><img src="./assets/images/My Profile.png" height="200" width="200"
+        /></a></div>
+        <div id="vocab" class="projects"> <li>Color Vocab Website</li>
+        <br />
+        <a href="./public/Colour Vocab Website/index.html"
+          ><img src="./assets/images/Color Vocab.png" height="200" width="200"
+        /></a></div>
+        <div id="meme" class="projects"><li>Meme Project</li>
+        <a href="./public/Motivation Meme Project/index.html"
+          ><img src="./assets/images/Meme Project.png" height="200" width="200"
+        /></a></div>
+      </ol>
+      <div id="note"><p>Note: Click on the images above to explore the respective projects. </p></div>
+    </div><div id="footer">
+    <footer>
+      <p>© 2026 Aditya Sharma. All rights reserved.</p>
+    </footer></div>
   </body>
 </html>
