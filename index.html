@@ -33,33 +33,25 @@ color: #4B5563;}
       #absolute-contact {
         padding: 0px 15px;
       }
-      .projects{height: 100px;
-      width: 100px;
+      .projects{height: 220px;
+      width: 220px;
     padding: 10px;
   margin: 0px;}
-
-    #bday{position: relative;
-      left: 250px;
-    bottom: 120px;
-  
+ #movie, #bday, #profile, #vocab, #meme {
+  display: inline-block;
+  vertical-align: top; 
+  margin-right: 20px; 
+  padding: 30px;
 }
-#profile{position: relative;
-  bottom: 240px;
-  left: 500px;
-}
-#vocab{position: relative;
-bottom: 360px;
-left: 750px;}
-#meme{position: relative;
-bottom: 480px;
-left: 1000px;}
 #footer{text-align: center;
-font-size: 10px;}
+font-size: 10px;
+position: relative;
+bottom: 0;}
 #note{text-align: center;
+  
   width: 100%;
 background-color: #8FA28A;
-position: absolute;
-bottom: 0;}
+}
 li h3{font-family: 'Inter', 'Roboto', sans-serif;
 font-size: 22px;
 font-weight: 600;}
@@ -77,7 +69,7 @@ font-weight: 600;}
     </div>
     <div id="projects">
       <ol>
-        <div class="projects"><li>
+        <div id="movie" class="projects"><li>
           Movie Recommendation Project <br />
           <a href="./public/movie-ranking.html"
             ><img src="./assets/images/Movie Ranking Project.png" height="200" width="200"
