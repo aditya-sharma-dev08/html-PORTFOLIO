@@ -41,7 +41,8 @@ a {
 #bday,
 #profile,
 #vocab,
-#meme {
+#meme,
+#flag {
   display: inline-block;
   vertical-align: top;
   margin-right: 20px;
