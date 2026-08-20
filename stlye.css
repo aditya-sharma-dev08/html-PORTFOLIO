@@ -34,19 +34,8 @@ a {
 .projects {
   height: 220px;
   width: 220px;
-  padding: 10px;
-  margin: 0px;
-}
-#movie,
-#bday,
-#profile,
-#vocab,
-#meme,
-#flag {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
   padding: 30px;
+  margin: 10px;
 }
 #footer {
   text-align: center;
@@ -64,4 +53,8 @@ li h3 {
   font-family: "Inter", "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 600;
+}
+#projects {
+  display: flex;
+  flex-wrap: wrap;
 }
